@@ -2,6 +2,8 @@ const path = require('path');
 
 const { WebpackRunPlugin, WebpackDonePlugin, loader1, loader2 } = require('./webpack')
 
+// const loader3 = require('./loader')
+
 
 
 const config = {
@@ -13,7 +15,7 @@ const config = {
     mode: "development",
     plugins: [new WebpackDonePlugin(), new WebpackRunPlugin()],
     module: {
-        rule: [
+        rules: [
             {
                 test: /\.js$/,
                 use: [loader1, loader2]

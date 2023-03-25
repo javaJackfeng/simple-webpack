@@ -67,11 +67,11 @@ class WebpackDonePlugin {
 }
 
 const loader1 = (source) => {
-    return `${source} // 给代码加上注释： loader1`
+    return source + '/** 加上注释： loader1 */'
 }
 
 const loader2 = (source) => {
-    return `${source} // 给代码加上注释：loader2`
+    return source + '/** 加上注释： loader2  */'
 }
 
 

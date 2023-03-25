@@ -7,10 +7,10 @@ const compiler = webpack(webpackOptions)
 
 
 compiler.run((err, stats) => {
-    console.log(err)
-    console.log(stats.toJson({
-        assets: true,
-        chunks: true,
-        modules: true
-    }))
+    // console.log(err)
+    // console.log(stats.toJson({
+    //     assets: true,
+    //     chunks: true,
+    //     modules: true
+    // }))
 })
